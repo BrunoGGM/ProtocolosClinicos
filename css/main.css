@@ -1,0 +1,122 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#fondo {
+background: rgba(72,203,247,1);
+background: -moz-linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 22%, rgba(38,187,237,1) 40%, rgba(15,176,230,1) 52%, rgba(25,162,204,1) 67%);
+background: -webkit-gradient(left bottom, right top, color-stop(5%, rgba(72,203,247,1)), color-stop(22%, rgba(72,203,247,1)), color-stop(40%, rgba(38,187,237,1)), color-stop(52%, rgba(15,176,230,1)), color-stop(67%, rgba(25,162,204,1)));
+background: -webkit-linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 22%, rgba(38,187,237,1) 40%, rgba(15,176,230,1) 52%, rgba(25,162,204,1) 67%);
+background: -o-linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 22%, rgba(38,187,237,1) 40%, rgba(15,176,230,1) 52%, rgba(25,162,204,1) 67%);
+background: -ms-linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 22%, rgba(38,187,237,1) 40%, rgba(15,176,230,1) 52%, rgba(25,162,204,1) 67%);
+background: linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 22%, rgba(38,187,237,1) 40%, rgba(15,176,230,1) 52%, rgba(25,162,204,1) 67%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48cbf7', endColorstr='#19a2cc', GradientType=1 );
+	width: 100%;	
+	height: 100%;
+}
+
+nav{
+	background-color: transparent;
+	box-shadow: 0px 0px 0px 0px;
+	transition: 0.3s;
+}
+
+.colorBarraTop{
+	background-color: #3A3F3B;
+	box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	transition: 1s;
+}
+
+.btn {
+	background-color: #3A3F3B;
+	color: #FFF;
+	transition: .5s;
+}
+
+.btn:hover{
+	background-color: #9db5b2;
+	transition: .5s;
+
+}
+
+.btn:active{
+	background-color: #daefed;
+	color: #3A3F3B;
+
+}
+
+.btn-large{
+	background-color: #3A3F3B;
+	color: #FFF;
+	transition: .5s;
+}
+.btn-large:hover{
+	background-color: #9db5b2;
+	color: #FFF;
+	transition: .5s;
+}
+.btn-large:active{
+	background-color: #daefed;
+	color: #3A3F3B;
+
+}
+.sombraTexto{
+
+	text-shadow: 8px 3px 12px #1A92B5;
+}
+
+.borde {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #FFF;
+}
+.borde:hover{
+
+	border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #0FB1E6;
+	
+}
+
+#home{
+	background-image: url("../img/cardio.png");
+	height: 90%;
+}
+
+#textoHome{
+	position: relative;
+	/*background-color: #352555; */
+	height: 100%;
+}
+
+#imgHome{
+	position: relative;
+	/*background-color: red; */
+	height: 100%;
+}
+.centrado-porcentual {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#formularios{
+	height: 100%;
+}
+
+#registro{
+	height: 100%;
+	background-color: red;
+}
