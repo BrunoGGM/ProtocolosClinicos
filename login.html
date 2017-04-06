@@ -21,12 +21,32 @@
 
 </head>
 	<body class="animated fadeIn">
+	<style type="text/css">
+html,body { 
+  overflow:hidden; 
+}
+</style>
 		<div class="row" id="formularios">
-			<div class="col s12 m6" id="registro">
-				registro
+			<div class="col s12 m6 registro" id="registro" onmouseover="return extenderRegistro()" onmouseout="regresarTamanoRegistro()">
+				<form class="col s10 push-s6 centrado-porcentual formregistro animated " method="POST" name="registro" id="formregistro" action="">
+					<div>
+						<h4>Registro</h4>
+					</div>
+					<input type="text" name="" placeholder="Nombre" class="col s12 m5">
+					<input type="text" name="" placeholder="Apellidos" class="col s12 m5 push-m2">
+					<input type="email" name="" placeholder="Correo: ejemplo@ejemplo.com">
+					<input type="date" name="">
+				</form>
 			</div>
-			<div class="col s12 m6" id="iniciar">
-				iniciar
+			<div class="col s12 m6 iniciar" id="iniciar" onmouseover=" return extenderIniciar()" onmouseout="regresarTamanoIniciar()">
+				<form class="col s10 push-s6 centrado-porcentual forminiciar animated" method="POST" name="iniciar" id="forminiciar" action="">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</form>
 			</div>
 		</div>
 	</body>
