@@ -24,28 +24,30 @@
 </head>
 <body style="background-color: #F0F0F0">	
 	<a id="botonAtras" href="index.html"><img src="img/return.png" title="Regresar al inicio"></a>
-	<div id="formularios" class="centrado-porcentual push-s6 push-m6 push-l6 col s12 m8 l5 row">
-		<div class="col s12 m10 push-m1" id="form">
-			<form id="formRegistro" class="animated fadeIn" name="" method="POST" action="#">
-				<h5 class="grey-text col s12">Registrate</h5>
-				<input type="text" name="" placeholder="Nombre" required="required">
-				<input type="text" name="" placeholder="Apellido Paterno">
-				<input type="date" name="" />
-				<p class="grey-text">Género:</p>
-				<input name="genero" type="radio" id="masculino" />
-				<label for="masculino">Masculino</label>
-				<input name="genero" type="radio" id="femenino" />
-				<label for="femenino">Femeino</label>
-				<input type="email" placeholder="Correo electronico" required="required">
-				<input type="number" placeholder="Teléfono:" required="required">
-				<p>
-					<input type="checkbox" id="aceptar">
-					<label for="aceptar">Acepto los <a href="terminos.html">términos </a> y <a href="aviso.html">aviso de privacidad</a></label>
-				</p>
-				<input type="submit" name="" value="Registrame" class="btn">
-				<br><br>
-				<span onclick="return login()">¿Ya tienes una cuenta? <a href="#"><b>Iniciar sesión</b></a></span>
-			</form>
+	<div class="row" style="width: 100%; height: 100%;">
+		<div id="formularios" class="centrado-porcentual push-s6 push-m6 push-l6 col s12 m8 l5 ">
+			<div class="col s12 m10 push-m1" id="form">
+				<form id="formRegistro" class="animated fadeIn" name="" method="POST" action="#">
+					<h5 class="grey-text col s12">Registrate</h5>
+					<input type="text" name="" placeholder="Nombre" required="required">
+					<input type="text" name="" placeholder="Apellido Paterno">
+					<input type="date" name="" />
+					<p class="grey-text">Género:</p>
+					<input name="genero" type="radio" id="masculino" />
+					<label for="masculino">Masculino</label>
+					<input name="genero" type="radio" id="femenino" />
+					<label for="femenino">Femeino</label>
+					<input type="email" placeholder="Correo electronico" required="required">
+					<input type="number" placeholder="Teléfono:" required="required">
+					<p>
+						<input type="checkbox" id="aceptar">
+						<label for="aceptar">Acepto los <a href="terminos.html">términos </a> y <a href="aviso.html">aviso de privacidad</a></label>
+					</p>
+					<input type="submit" name="" value="Registrame" class="btn">
+					<br><br>
+					<span onclick="return login()">¿Ya tienes una cuenta? <a href="#"><b>Iniciar sesión</b></a></span>
+				</form>
+			</div>
 		</div>
 	</div>
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
