@@ -1,11 +1,49 @@
+body {
+    overflow: hidden;
+}
+
+/* preloader */
+#preloader {
+    position: fixed;
+    top:0; left:0;
+    right:0; bottom:0;
+    background: #f0f0f0;
+    z-index: 100;
+}
+#loader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:50%; top:50%;
+    background: url(../img/loader.gif) no-repeat center 0;
+    background-size: contain;
+    margin:-50px 0 0 -50px;
+}
 html {
 	width: 100%;
 	height: 100%;
 }
 
+.footer-fijo{
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    	
+}
 body {
 	width: 100%;
 	height: 100%;
+}
+#sidenav-overlay {
+    position: fixed;
+    top: 0;
+    left: 301px;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    will-change: opacity;
 }
 
 #fondo {
@@ -27,6 +65,16 @@ nav{
 	transition: 0.3s;
 }
 
+#homeMain{
+	background-color: #F2F2F2;
+	position: relative;
+	z-index: -1;
+}
+
+#protocolos{
+	position: relative;;
+	z-index: -1;
+}
 .colorBarraTop{
 	background-color: #3A3F3B;
 	box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
@@ -88,6 +136,15 @@ nav{
 	
 }
 
+.bordeMobile {
+  color: #000;
+}
+.bordeMobile:hover{
+
+ color:  #0FB1E6;
+	
+}
+
 #home{
 	background-image: url("../img/cardio.png");
 	height: 90%;
@@ -112,39 +169,53 @@ nav{
     -webkit-transform: translate(-50%, -50%);
 }
 
+#botonAtras{
+	position: absolute;
+	padding: 1%;
+}
+
 #formularios{
-	height: 100%;
+	background-color: #fff;
+	box-shadow: 4px 5px 10px #ccc;
+	transition: .3s;
+
+}
+#formularios:hover{
+	box-shadow: 15px 15px 15px #ccc;
+	transition: .3s;
 }
 
-.registro{
-	height: 100%;
+#formLogin{
+	position: relative;
+	padding: 30px;
+}
+
+#formRegistro{
+	position: relative;
+	padding: 30px
+}
+
+.footer-copyright{
+	background-color: rgba(0, 0, 0, 0.17);
+}
+.blur{
+	-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);
+    background-color: #0FB1E6;
+}
+
+#comentarios{
+	padding: 3em;
+}
+.azul{
+	background-color: #0FB1E6;
+}
+.verde{
+	background-color: #8bc63f;
+}
+.obscuro{
 	background-color: #3A3F3B;
-	transition: .5s;
-}
-.registro:hover{
-	transition: .5s;
-}
-.iniciar{
-	height: 100%;
-	background-color: #3A3F3B;
-	transition: .5s;
-}
-.iniciar:hover{
-	transition: .5s;
-}
-
-.formregistro{
-	background-color: white;
-	box-shadow: 5px 5px 10px grey; 
-	transition: .5s;
-}
-.formregistro:hover{
-	background-color: white;
-	box-shadow: 8px 8px 15px black; 
-	transition: .5s;
-
-}
-.forminiciar{
-	background-color: white;
-	box-shadow: 5px 5px 10px grey;
 }

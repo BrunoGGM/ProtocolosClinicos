@@ -1,15 +1,16 @@
-<!-- Autor Bruno Gomez -->
+<!-- Autor Bruno Gomez Mora -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bienvenido</title>
+	<title>Login </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+
 	<!--CSS -->
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
 
 	<!-- JS -->
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -17,37 +18,50 @@
 	<script type="text/javascript" src="js/home.js"></script>
 
 	<!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 </head>
-	<body class="animated fadeIn">
-	<style type="text/css">
-html,body { 
-  overflow:hidden; 
-}
-</style>
-		<div class="row" id="formularios">
-			<div class="col s12 m6 registro" id="registro" onmouseover="return extenderRegistro()" onmouseout="regresarTamanoRegistro()">
-				<form class="col s10 push-s6 centrado-porcentual formregistro animated " method="POST" name="registro" id="formregistro" action="">
-					<div>
-						<h4>Registro</h4>
-					</div>
-					<input type="text" name="" placeholder="Nombre" class="col s12 m5">
-					<input type="text" name="" placeholder="Apellidos" class="col s12 m5 push-m2">
-					<input type="email" name="" placeholder="Correo: ejemplo@ejemplo.com">
-					<input type="date" name="">
-				</form>
-			</div>
-			<div class="col s12 m6 iniciar" id="iniciar" onmouseover=" return extenderIniciar()" onmouseout="regresarTamanoIniciar()">
-				<form class="col s10 push-s6 centrado-porcentual forminiciar animated" method="POST" name="iniciar" id="forminiciar" action="">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</form>
-			</div>
+<body style="background-color: #F0F0F0">	
+	<a id="botonAtras" href="index.html"><img src="img/return.png" title="Regresar al inicio"></a>
+	<div id="formularios" class="centrado-porcentual push-s6 push-m6 push-l6 col s12 m8 l5 row">
+		<div class="col s12 m10 push-m1" id="form">
+			<form id="formRegistro" class="animated fadeIn" name="" method="POST" action="#">
+				<h5 class="grey-text col s12">Registrate</h5>
+				<input type="text" name="" placeholder="Nombre" required="required">
+				<input type="text" name="" placeholder="Apellido Paterno">
+				<input type="date" name="" />
+				<p class="grey-text">Género:</p>
+				<input name="genero" type="radio" id="masculino" />
+				<label for="masculino">Masculino</label>
+				<input name="genero" type="radio" id="femenino" />
+				<label for="femenino">Femeino</label>
+				<input type="email" placeholder="Correo electronico" required="required">
+				<input type="number" placeholder="Teléfono:" required="required">
+				<p>
+					<input type="checkbox" id="aceptar">
+					<label for="aceptar">Acepto los <a href="terminos.html">términos </a> y <a href="aviso.html">aviso de privacidad</a></label>
+				</p>
+				<input type="submit" name="" value="Registrame" class="btn">
+				<br><br>
+				<span onclick="return login()">¿Ya tienes una cuenta? <a href="#"><b>Iniciar sesión</b></a></span>
+			</form>
 		</div>
-	</body>
+	</div>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript">
+
+	var options = [
+      {selector: '#formularios', offset: 50, callback: function(el) {
+        Materialize.toast("Si ya tienes sesión  pulsa en 'Iniciar sesión' en la parte inferior del formulario",5000);
+      } }
+    ];
+    Materialize.scrollFire(options);
+	</script>
+
+
+</body>
 </html>
+
+
+
