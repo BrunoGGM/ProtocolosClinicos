@@ -22,8 +22,11 @@
 
 
 </head>
-<body style="background-color: #F0F0F0">	
-	<a id="botonAtras" href="index.html"><img src="img/return.png" title="Regresar al inicio"></a>
+<body style="background-color: #F0F0F0">
+	<div id="preloader">
+    	<div id="loader"></div>
+	</div>	
+	<a id="botonAtras" href="index.html" class="hide-on-small-only atras"><img src="img/return.png" title="Regresar al inicio"></a>
 	<div class="row" style="width: 100%; height: 100%;">
 		<div id="formularios" class="centrado-porcentual push-s6 push-m6 push-l6 col s12 m8 l5 ">
 			<div class="col s12 m10 push-m1" id="form">
@@ -43,7 +46,7 @@
 						<input type="checkbox" id="aceptar">
 						<label for="aceptar">Acepto los <a href="terminos.html">términos </a> y <a href="aviso.html">aviso de privacidad</a></label>
 					</p>
-					<input type="submit" name="" value="Registrame" class="btn">
+					<input type="submit" name="" value="Registrame" class="btn waves-effect waves-light">
 					<br><br>
 					<span onclick="return login()">¿Ya tienes una cuenta? <a href="#"><b>Iniciar sesión</b></a></span>
 				</form>

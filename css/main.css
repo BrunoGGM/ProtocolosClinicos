@@ -172,6 +172,13 @@ nav{
 #botonAtras{
 	position: absolute;
 	padding: 1%;
+	transition: .1s;
+	
+}
+#botonAtras:hover{
+	position: absolute;
+	padding-left: 0%;
+	transition: .1s;
 }
 
 #formularios{

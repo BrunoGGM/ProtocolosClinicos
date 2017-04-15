@@ -48,7 +48,11 @@ iniciar.classList.add('logofondo');
 
 }*/
 
-
+	// preloader
+	$(window).load(function() {
+		$('#preloader').fadeOut('slow');
+		$('body').css({'overflow':'visible'});
+	})
 
 function registro() {
 	var registro =  document.getElementById('form');

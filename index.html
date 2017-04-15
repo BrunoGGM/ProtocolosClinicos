@@ -12,17 +12,13 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 
-	<!-- JS -->
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-
 </head>
 	<body>
 	<div id="preloader">
     	<div id="loader"></div>
 	</div>
-		<div class="animated fadeIn" id="fondo">
-			<div id="nav">
+		<div class="animated fadeIn z-depth-1" id="fondo">
+			<div id="nav" class="">
 				<nav>
 					<div class="nav-wrapper container">
 						<a href="#!" class="brand-logo"><img src="img/logoB.svg" class="animated pulse" alt="logo" style="height: 52px;"></a>
@@ -48,7 +44,7 @@
 					<div class="centrado-porcentual">
 						<h3 class="sombraTexto animated bounce">ACELERAR LA INVESTIGACIÓN</h3>
 						<h4 class="thin sombraTexto animated bounce">PARA ENCONTRAR LA CURA MÁS RÁPIDO</h4>
-						<a href="login.html" class="btn-large hoverable animated bounceIn">Registrate ahora</a>
+						<a href="login.html" class="btn-large waves-effect waves-light animated bounceIn">Registrate ahora</a>
 					</div>
 				</div>
 				<div class="col s12 m7 l7 animated bounceInUp hide-on-small-only" id="imgHome">
@@ -57,7 +53,7 @@
 			</div>
 		</div>	
 
-		<div id="homeMain">
+		<div id="homeMain" class="z-depth-1">
 			<br>
 			<div class="row">
 
@@ -68,7 +64,7 @@
 						<h3 class="thin">Un poco de lo que hacemos</h3>
 
 						<div class="col s12 m4">
-							<div class="card">
+							<div class="card hoverable">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" alt="img" src="img/demo.jpg">
 								</div>
@@ -89,7 +85,7 @@
 						</div>
 
 						<div class="col s12 m4">
-								<div class="card">
+								<div class="card hoverable">
 									<div class="card-image waves-effect waves-block waves-light">
 										<img class="activator" alt="img" src="img/demo.jpg">
 									</div>
@@ -110,7 +106,7 @@
 						</div>
 
 						<div class="col s12 m4">
-									<div class="card">
+									<div class="card hoverable">
 										<div class="card-image waves-effect waves-block waves-light">
 											<img class="activator" alt="img" src="img/demo.jpg">
 										</div>
@@ -173,13 +169,13 @@
 			<div id="protocolos">
 				<div class="row">
 					<div class="container">
-						<div>
+						
 							<div class="col s12">
 								<h4>Protocolos activos:</h4>
 							</div>
 
 							<div class="col s12 m6">
-								<div class="card">
+								<div class="card hoverable">
 									<div class="card-image waves-effect waves-block waves-light">
 											<img class="activator" alt="img" src="img/demo.jpg">
 									</div>
@@ -201,7 +197,7 @@
 							</div>
 
 							<div class="col s12 m6">
-								<div class="card">
+								<div class="card hoverable">
 									<div class="card-image waves-effect waves-block waves-light">
 											<img class="activator" alt="img" src="img/demo.jpg">
 									</div>
@@ -222,23 +218,28 @@
 								</div>
 							</div>	
 	
-
-						</div>
+					<div class="col s12" style="padding: 2em">
+						<div class="divider"></div>
+						<h4 class="thin">hola</h4>
+						<img class="col s12 m3 animated zoomIn" src="img/ipn.png" style="padding: 1em;">
+						<img class="col s12 m3 animated zoomIn" src="img/esm.png" style="padding: 1em;">
+						<img class="col s12 m3 animated zoomIn" src="img/demo.jpg" style="padding: 1em;">
+						<img class="col s12 m3 animated zoomIn" src="img/demo.jpg" style="padding: 1em;">
+					</div>	
+						
 					</div>
 				</div>
 			</div>
-	
 
 
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- JS -->
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/home.js"></script>
 		<script type="text/javascript">
-	// preloader
-	$(window).load(function() {
-		$('#preloader').fadeOut('slow');
-		$('body').css({'overflow':'visible'});
-	})
 
 	$(".button-collapse").sideNav();
 		 // cambiar estilos al nav	
@@ -253,11 +254,6 @@
 		 ];
 		 Materialize.scrollFire(options);
 		</script>	
-
-		<!--Import Google Icon Font-->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
 
         <footer class="page-footer obscuro">
           <div class="container">
