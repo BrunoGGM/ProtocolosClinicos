@@ -1,7 +1,3 @@
-body {
-    overflow: hidden;
-}
-
 /* preloader */
 #preloader {
     position: fixed;
@@ -24,17 +20,16 @@ html {
 	height: 100%;
 }
 
-.footer-fijo{
-
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    	
-}
 body {
 	width: 100%;
 	height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
+main {
+   flex: 1 0 auto;
+ }
 #sidenav-overlay {
     position: fixed;
     top: 0;
@@ -45,7 +40,12 @@ body {
     z-index: 1;
     will-change: opacity;
 }
-
+#imgNosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
 #fondo {
 background: rgba(72,203,247,1);
 background: -moz-linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 22%, rgba(38,187,237,1) 40%, rgba(15,176,230,1) 52%, rgba(25,162,204,1) 67%);
@@ -55,13 +55,13 @@ background: -o-linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 
 background: -ms-linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 22%, rgba(38,187,237,1) 40%, rgba(15,176,230,1) 52%, rgba(25,162,204,1) 67%);
 background: linear-gradient(45deg, rgba(72,203,247,1) 5%, rgba(72,203,247,1) 22%, rgba(38,187,237,1) 40%, rgba(15,176,230,1) 52%, rgba(25,162,204,1) 67%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48cbf7', endColorstr='#19a2cc', GradientType=1 );
-	width: 100%;	
+	width: 100%;
 	height: 100%;
 }
 
 nav{
 	background-color: transparent;
-	box-shadow: 0px 0px 0px 0px;
+	box-shadow: 0 0 0 0;
 	transition: 0.3s;
 }
 
@@ -124,6 +124,7 @@ nav{
     border-width: medium;
     border-radius: 5px;
     padding: 10px;
+    transition: .3s;
     border-color: #FFF;
 }
 .borde:hover{
@@ -132,8 +133,9 @@ nav{
     border-width: medium;
     border-radius: 5px;
     padding: 10px;
+    transition: .3s;
     border-color: #0FB1E6;
-	
+
 }
 
 .bordeMobile {
@@ -142,7 +144,7 @@ nav{
 .bordeMobile:hover{
 
  color:  #0FB1E6;
-	
+
 }
 
 #home{
@@ -173,7 +175,7 @@ nav{
 	position: absolute;
 	padding: 1%;
 	transition: .1s;
-	
+
 }
 #botonAtras:hover{
 	position: absolute;
@@ -216,6 +218,9 @@ nav{
 
 #comentarios{
 	padding: 3em;
+}
+#contenido{
+  padding-top: 30px;
 }
 .azul{
 	background-color: #0FB1E6;
